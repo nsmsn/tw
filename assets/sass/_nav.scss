@@ -1,0 +1,154 @@
+//
+// NAVIGATION
+//
+
+/** Astro: Mobile-first navigation patterns by Chris Ferdinandi.
+ * http://github.com/cferdinandi/astro * Free to use under the MIT License. * http://gomakethings.com/mit/
+ */
+
+.nav-menu-basic-left {
+	margin-top: -18px;
+	background-color: $dark-red;
+	position: relative;
+}
+
+.logo-basic-left {
+	display: inline-block;
+	color: $white;
+	margin-bottom: calc-em(8px);
+	text-decoration: none;
+	position: relative;
+}
+
+
+.logo-basic-left:hover {
+	color: $black;
+	text-decoration: none;
+}
+
+
+.nav-basic-left {
+	list-style: none;
+	margin: 0 calc-em(-8px);
+	padding: 0;
+}
+
+
+.nav-basic-left > li {
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	float: none;
+	margin-left: 8px;
+	margin-right:30px;
+}
+
+.nav-basic-left > li > a{
+	color: lighten($silver,5%);
+}
+
+.nav-basic-left > li > a:hover{
+	color: $yellow;
+}
+
+/* active link styling */
+  .nav-basic-left > li.active > a { 
+  	background-color: $black;
+ } 
+
+/*  Hide the navigation toggle menu button by default.
+ *  Only needed for expand-and-collapse option. */
+.nav-toggle-basic-left {
+	display: none;
+	visibility: hidden;
+	color: $white;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: $black;
+	padding: .5em 1em;
+	min-width: 42px;
+}
+
+.nav-toggle-basic-left:hover {
+	color: $yellow;
+	background-color: darken($black,10.5%);
+}
+/*  Expand-and-Collapse styling for smaller screens.
+ *  Remove if not using.
+ *  Change max-width to fit your project. */
+@media (max-width: $bp-medium) {
+
+	.nav-menu-basic-left {
+		margin-top: -1px;
+		border-bottom: 3px solid $black;
+}
+
+	.nav-basic-left > li {
+		margin-bottom: 8px;
+		font-size: 2em;
+		margin-left: 0px;
+		margin-right:0px;
+	}
+	/*  .js-astro prefix ensure content is only hidden when JavaScript is supported.
+	 *  This requires on the included js-accessibility.js-astro script. */
+
+	/*  Display navigation toggle button if javascript is supported */
+	.js-astro .nav-collapse .nav-toggle-basic-left {
+		display: block;
+		visibility: visible;
+		float: right;
+	}
+
+	/*  Hide navigation items if javascript is supported */
+	.js-astro .nav-collapse .nav-menu-basic-left {
+		max-height: 0;
+		overflow: hidden;
+		/*  CSS3 animation for when menu content expands */
+		transition: all 0.5s ease-in;
+	}
+
+	/*  When collapsed element has the .active class, show it
+	 *  Uses max-height instead of display: none to allow for
+	 *  CSS3 animations, which don't work on display values. */
+	.js-astro .nav-collapse .nav-menu-basic-left.active {
+		max-height: 999em;
+	}
+
+	/*  Display navigation items as full-width, stacked blocks when javascript supported */
+	.js-astro .nav-collapse .nav-menu-basic-left li {
+		display: block;
+		width: 100%;
+		padding-top: calc-em(4px);
+		padding-bottom: calc-em(4px);
+		box-sizing: border-box;
+	}
+
+}
+
+@media (min-width: $bp-medium) {
+
+	.nav-menu-basic-left {
+	padding-top: .8em;
+	padding-bottom: 1px;
+	}
+}
+
+@media (min-width: $bp-large) {
+
+	.nav-basic-left {
+		text-align: right;
+
+		> li {
+			margin-right: 0;
+			margin-left: 4%;
+		}
+	}
+}
+
+@media (min-width: $bp-xlarge) {
+
+	.nav-basic-left > li{
+		margin-right: 2%;
+	}
+}

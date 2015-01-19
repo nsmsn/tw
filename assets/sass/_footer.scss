@@ -1,0 +1,19 @@
+//
+// FOOTER
+//
+
+.wrapper-footer {
+  padding-top: 1px;
+  background-color: $brown;
+  border-top: 3px solid $dust;
+  color: lighten($dust,30%);
+  font-size: .75em;
+}
+
+.wrapper-footer a {
+	color: lighten($red,5%);
+}
+
+.wrapper-footer a:hover {
+	color: $gold;
+}

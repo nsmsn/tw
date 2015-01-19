@@ -1,0 +1,24 @@
+//
+// FORMS
+//
+
+input {
+	margin-top:.75em;
+}
+
+.button {
+	display: inline-block;
+	font-size: 15px;
+	background-color: $brick;
+	color: $silver;
+	font-family: $helveticaNeue;
+	border-radius: 6px;
+	border: 1px solid $dark-red;
+	padding: 8px 11px;
+	line-height: 1.2;
+	font-weight: normal;
+}
+
+.button:hover {
+	background-color: $dark-red;
+}

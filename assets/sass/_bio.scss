@@ -1,0 +1,41 @@
+//
+// BIOGRAPHIES
+//
+
+.circular {
+	border-radius: 100%;
+}
+
+.bio {
+	padding-bottom: .7em;
+	border-bottom: 1px $gray solid;
+	@extend .clearfix;	
+}
+
+.profile-img {
+
+	width: 100%;
+	max-width: 333px;
+	max-height: 333px;
+
+	@extend .circular;
+
+	@media (min-width: $bp-small) {
+		width: 40%;
+		height: auto;
+		float: right;
+		margin-left: .9em;
+		margin-bottom: .9em;
+	}
+
+	@media (min-width: $bp-large) {
+		width: 30%;
+	}
+}
+
+.player {
+	@extend .grid-dynamic;
+	font-size: .89em;
+	margin-top: 1em;
+	margin-bottom:1em;
+}

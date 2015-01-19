@@ -1,0 +1,30 @@
+//
+// COLORS
+//
+
+// Grayscale
+$black: #414141;
+$charcoal: #555147;
+$gray: #747678;
+$silver: #EBEBE7;
+$white: #FFFFFF;
+
+// Brand
+$red: #E4503B;
+$warm-red: #E1612C;
+$brick: #A54A25;
+$dark-red: #90381E;
+
+$yellow: #FFDF85;
+$gold: #EB9728;
+
+$dust: #5E584D;
+$brown: #4C4640;
+
+//Fail-safe (in case I screw up)
+
+$brand: $red;
+$grey: $gray;
+
+//border
+$none: 	1px solid $white;

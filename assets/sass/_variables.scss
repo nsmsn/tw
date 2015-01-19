@@ -1,0 +1,49 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+@import "_colors";
+
+
+
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+$bitter: bitter, $georgia; 
+$vast: 'Vast Shadow', Rockwell, 'Courier Bold', Courier, Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', 'sans serif';
+$script: 'Mr Dafoe', cursive;
+
+// Breakpoints
+$bp-xsmall: 18em;
+$bp-small: 25em;
+$bp-medium: 37em;
+$bp-large: 47.5em;
+$bp-xlarge: 64em;
+
+// Sizing
+$font-size-base: 100%;
+$font-size-xlarge-screens: 125%;
+$spacing: 1.5625em;
+$container-width: 94%;
+$container-max-width: 46em;
+
+// MISC 
+
+// Set a default duration for CSS transitions
+$transitionduration: .25s;
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

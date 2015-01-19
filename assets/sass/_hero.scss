@@ -1,0 +1,33 @@
+//
+// HERO
+//
+
+.hero {
+	font-size: 1.125em;
+	color: $dust;
+	font-style: italic;
+	@media screen and (min-width: $bp-large) {
+		margin-left: 250px;
+	//	text-align: right;
+	}
+}
+
+.quote {
+	background-color: $dark-red;
+	color: $white;
+	padding: .25em .5em;
+}
+
+.quote blockquote {
+	margin-top: 1em;
+	color: $white;
+	font-size: 1em;
+	border-left: 2px $red solid;
+}
+
+.quote figcaption {
+	margin-top: 1em;
+	margin-bottom: .5em;
+	text-align: center;
+	color: lighten($dust,40%);
+}

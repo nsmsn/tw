@@ -1,0 +1,64 @@
+//
+// MEDIA QUERIES
+//
+// typographic modular scale and misc. tweaks
+
+@media (min-width: $bp-medium) {
+
+		h1 {
+		font-size: 2.5em;
+		line-height: 1.125em;
+		}
+}
+
+@media (min-width: $bp-large) {
+
+	h1 {
+		font-size: 3em;
+		line-height: 1.05em;
+		}
+
+	h2 {
+		font-size: 2em;
+		line-height: 1.25em;
+		}
+
+	h3 {
+		font-size: 1.5em;
+		line-height: 1.25em;
+		}
+
+	h4 {
+		font-size: 1.125em;
+		line-height: 1.22222222em;
+		}
+
+}
+
+
+@media (min-width: $bp-xlarge) {
+
+body {
+
+ 	font-size: 18px;
+ 	line-height: 1.4;
+}
+
+
+	h1 {
+		font-size: 3.5em;
+		line-height: 1em;
+		}
+
+	h2 {
+		font-size: 2.25em;
+		}
+
+	h3 {
+		font-size: 1.75em;
+		}
+
+	h4 {
+		font-weight: bold;
+	}
+}
